@@ -22,13 +22,11 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v5
-        with:
-          version: 10
+      - name: Upgrade npm for OIDC Trusted Publishing
+        run: npm install -g npm@latest
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
 
       - name: Release
-        run: pnpm release
+        run: npm run release
