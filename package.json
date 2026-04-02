@@ -1,6 +1,6 @@
 {
 	"name": "@phil-fetchski/n8n-nodes-zoho-cliq",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "Zoho Cliq community node for n8n (100% Zoho Cliq API coverage)",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
