@@ -8,9 +8,22 @@
 	"homepage": "https://github.com/phil-fetchski/n8n-nodes-zoho-cliq",
 	"keywords": [
 		"n8n-community-node-package",
+		"n8n-community-nodes",
+		"n8n-community-node",
 		"n8n-nodes",
 		"zoho",
-		"cliq"
+		"cliq",
+		"zoho-cliq",
+		"zoho-cliq-api",
+		"zoho-cliq-integration",
+		"zoho-cliq-n8n",
+		"zoho-cliq-n8n-node",
+		"zoho-cliq-n8n-integration",
+		"zoho-cliq-n8n-nodes",
+		"zoho-cliq-n8n-community-node",
+		"zoho-cliq-n8n-community-nodes",
+		"zoho-cliq-n8n-community-node-package",
+		"zoho cliq"
 	],
 	"author": {
 		"name": "Phil Schools",
@@ -18,26 +31,23 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/phil-fetchski/n8n-nodes-zoho-cliq.git"
+		"url": "git+https://github.com/phil-fetchski/n8n-nodes-zoho-cliq.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
 		"build:watch": "tsc --watch",
 		"dev": "n8n-node dev",
 		"dev:heap": "cross-env NODE_OPTIONS=--max-old-space-size=8192 n8n-node dev",
-		"lint": "rm -rf coverage && n8n-node lint",
-		"lint:fix": "rm -rf coverage && n8n-node lint --fix",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
 		"lint:local": "eslint . --ext .ts,.js --cache --no-error-on-unmatched-pattern --ignore-pattern '**/__tests__/**' --ignore-pattern 'coverage/**'",
 		"test:types": "rm -rf coverage && tsc --noEmit && pnpm lint",
 		"test:unit": "jest --config jest.config.cjs",
 		"test:coverage": "jest --config jest.config.cjs --coverage",
 		"format:check": "prettier . --check",
 		"format:fix": "prettier . --write",
-		"clean": "rm -rf dist && rm -rf node_modules",
-		"clean:dist": "rm -rf dist",
 		"release": "n8n-node release",
 		"prepublishOnly": "n8n-node prerelease",
-		"reinstall": "rm -rf node_modules && rm -rf dist && pnpm install",
 		"docs:build": "node scripts/build-guides.mjs"
 	},
 	"files": [
