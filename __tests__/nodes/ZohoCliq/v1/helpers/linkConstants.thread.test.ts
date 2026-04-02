@@ -1,0 +1,50 @@
+import {
+	AI_AGENT_TOOL_DOC_LINKS,
+	THREAD_ADD_FOLLOWERS_AGENT_DETAILS_LINK,
+	THREAD_AUTO_FOLLOW_AGENT_DETAILS_LINK,
+	THREAD_CREATE_AGENT_DETAILS_LINK,
+	THREAD_FOLLOW_AGENT_DETAILS_LINK,
+	THREAD_GET_FOLLOWERS_AGENT_DETAILS_LINK,
+	THREAD_GET_MAIN_MESSAGE_AGENT_DETAILS_LINK,
+	THREAD_GET_NON_FOLLOWERS_AGENT_DETAILS_LINK,
+	THREAD_LIST_AGENT_DETAILS_LINK,
+	THREAD_POST_AGENT_DETAILS_LINK,
+	THREAD_REMOVE_FOLLOWERS_AGENT_DETAILS_LINK,
+	THREAD_SCHEDULE_MESSAGE_AGENT_DETAILS_LINK,
+	THREAD_UNFOLLOW_AGENT_DETAILS_LINK,
+	THREAD_UPDATE_STATE_AGENT_DETAILS_LINK,
+} from '../../../../../nodes/ZohoCliq/v1/helpers/linkConstants';
+
+describe('ZohoCliq - linkConstants thread links', () => {
+	it('should expose Thread AI guide links directly and through the grouped registry', () => {
+		expect(THREAD_ADD_FOLLOWERS_AGENT_DETAILS_LINK).toContain('/Thread/add-followers.md');
+		expect(THREAD_AUTO_FOLLOW_AGENT_DETAILS_LINK).toContain('/Thread/auto-follow.md');
+		expect(THREAD_CREATE_AGENT_DETAILS_LINK).toContain('/Thread/create.md');
+		expect(THREAD_FOLLOW_AGENT_DETAILS_LINK).toContain('/Thread/follow.md');
+		expect(THREAD_GET_FOLLOWERS_AGENT_DETAILS_LINK).toContain('/Thread/get-followers.md');
+		expect(THREAD_GET_MAIN_MESSAGE_AGENT_DETAILS_LINK).toContain('/Thread/get-main-message.md');
+		expect(THREAD_GET_NON_FOLLOWERS_AGENT_DETAILS_LINK).toContain('/Thread/get-non-followers.md');
+		expect(THREAD_LIST_AGENT_DETAILS_LINK).toContain('/Thread/list.md');
+		expect(THREAD_POST_AGENT_DETAILS_LINK).toContain('/Thread/post.md');
+		expect(THREAD_REMOVE_FOLLOWERS_AGENT_DETAILS_LINK).toContain('/Thread/remove-followers.md');
+		expect(THREAD_SCHEDULE_MESSAGE_AGENT_DETAILS_LINK).toContain('/Thread/schedule-message.md');
+		expect(THREAD_UNFOLLOW_AGENT_DETAILS_LINK).toContain('/Thread/unfollow.md');
+		expect(THREAD_UPDATE_STATE_AGENT_DETAILS_LINK).toContain('/Thread/update-state.md');
+
+		expect(AI_AGENT_TOOL_DOC_LINKS.thread).toEqual({
+			addFollowers: THREAD_ADD_FOLLOWERS_AGENT_DETAILS_LINK,
+			autoFollow: THREAD_AUTO_FOLLOW_AGENT_DETAILS_LINK,
+			create: THREAD_CREATE_AGENT_DETAILS_LINK,
+			follow: THREAD_FOLLOW_AGENT_DETAILS_LINK,
+			getFollowers: THREAD_GET_FOLLOWERS_AGENT_DETAILS_LINK,
+			getMainMessage: THREAD_GET_MAIN_MESSAGE_AGENT_DETAILS_LINK,
+			getNonFollowers: THREAD_GET_NON_FOLLOWERS_AGENT_DETAILS_LINK,
+			list: THREAD_LIST_AGENT_DETAILS_LINK,
+			post: THREAD_POST_AGENT_DETAILS_LINK,
+			removeFollowers: THREAD_REMOVE_FOLLOWERS_AGENT_DETAILS_LINK,
+			scheduleMessage: THREAD_SCHEDULE_MESSAGE_AGENT_DETAILS_LINK,
+			unfollow: THREAD_UNFOLLOW_AGENT_DETAILS_LINK,
+			updateState: THREAD_UPDATE_STATE_AGENT_DETAILS_LINK,
+		});
+	});
+});

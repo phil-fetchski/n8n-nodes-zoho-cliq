@@ -1,0 +1,75 @@
+{
+	"name": "n8n-nodes-zoho-cliq",
+	"version": "0.1.0",
+	"description": "Zoho Cliq community node for n8n (100% Zoho Cliq API coverage)",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"license": "MIT",
+	"homepage": "https://github.com/phil-fetchski/n8n-nodes-zoho-cliq",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n-nodes",
+		"zoho",
+		"cliq"
+	],
+	"author": {
+		"name": "Phil Schools",
+		"email": "phil@fetchski.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/phil-fetchski/n8n-nodes-zoho-cliq.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"dev:heap": "cross-env NODE_OPTIONS=--max-old-space-size=8192 n8n-node dev",
+		"lint": "rm -rf coverage && n8n-node lint",
+		"lint:fix": "rm -rf coverage && n8n-node lint --fix",
+		"lint:local": "eslint . --ext .ts,.js --cache --no-error-on-unmatched-pattern --ignore-pattern '**/__tests__/**' --ignore-pattern 'coverage/**'",
+		"test:types": "rm -rf coverage && tsc --noEmit && pnpm lint",
+		"test:unit": "jest --config jest.config.cjs",
+		"test:coverage": "jest --config jest.config.cjs --coverage",
+		"format:check": "prettier . --check",
+		"format:fix": "prettier . --write",
+		"clean": "rm -rf dist && rm -rf node_modules",
+		"clean:dist": "rm -rf dist",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease",
+		"reinstall": "rm -rf node_modules && rm -rf dist && pnpm install",
+		"docs:build": "node scripts/build-guides.mjs"
+	},
+	"files": [
+		"dist/index.js",
+		"dist/index.d.ts",
+		"dist/credentials/**/*",
+		"dist/nodes/**/*"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/ZohoCliqOAuth2Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ZohoCliq/ZohoCliq.node.js"
+		]
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.4",
+		"@n8n/node-cli": "^0.23.1",
+		"@types/jest": "^30.0.0",
+		"cross-env": "^10.1.0",
+		"eslint": "^9.39.4",
+		"jest": "30.2.0",
+		"n8n-workflow": "^2.13.1",
+		"prettier": "^3.8.1",
+		"release-it": "^19.2.4",
+		"ts-jest": "^29.4.9",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

@@ -1,0 +1,985 @@
+[
+	{
+		"extensions": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"manage": "enabled"
+			}
+		},
+		"peripherals": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"user_status": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"mobile_app_shortcuts": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"group_audio_call": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"forward_recordings": "enabled",
+				"start": "enabled",
+				"download_recordings": "enabled"
+			}
+		},
+		"guest_chat": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"integrations": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"group_call_recording": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"people_integrations": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"ediscovery": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"video_call": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"forward_recordings": "enabled",
+				"start": "enabled",
+				"download_recordings": "enabled"
+			}
+		},
+		"tabs_web_preferences": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"reminders": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"client_member": {
+			"is_admin_module": false,
+			"status": "disabled",
+			"actions": {
+				"attachments": "enabled",
+				"download": "enabled",
+				"video_call": "enabled",
+				"forward": "enabled",
+				"message": "enabled",
+				"audio_call": "enabled",
+				"screen_share_call": "enabled"
+			}
+		},
+		"zoho_apps": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"voice_integration": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"chat_with_us": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"commands": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"resources": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"sso": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"resource_management": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"visibility": {
+			"is_admin_module": false,
+			"status": "disabled"
+		},
+		"private_conversation": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"org_channels": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"attachments": "enabled",
+				"use": "enabled",
+				"download": "enabled",
+				"forward": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"thread_conversations": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"office365": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"showtime_integrations": {
+			"is_admin_module": true,
+			"status": "disabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"telephony_integrations": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"adminpanel_integrations": {
+			"is_admin_module": true,
+			"status": "enabled"
+		},
+		"reports": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"mobile_data_protection": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"screen_share": "enabled",
+				"file_download": "enabled",
+				"copy_data": "enabled",
+				"screen_shot": "enabled"
+			}
+		},
+		"organisations": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"functions": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"popup_notification": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"restrict_ip": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"fbmeta_migration": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"mobile_datastore_encryption": {
+			"is_admin_module": false,
+			"status": "disabled"
+		},
+		"stickers": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"delete": "enabled",
+				"publish_to_org": "enabled"
+			}
+		},
+		"slack_migration": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"direct_message": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"configs": [
+				{
+					"name": "profile_based_restricted_reply_time_frame",
+					"label": "Time to reply",
+					"type": "long",
+					"value": {
+						"profile_based_restricted_reply_time_frame": "",
+						"restricted_reply_time_frame": "345600000"
+					}
+				}
+			]
+		},
+		"primetime_recording": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"external_link": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"team_channels": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"attachments": "enabled",
+				"use": "enabled",
+				"download": "enabled",
+				"forward": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"customdomain": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"events": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"cliq_team_import": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"applets": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"external_member": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"attachments": "enabled",
+				"download": "enabled",
+				"video_call": "enabled",
+				"forward": "enabled",
+				"message": "enabled",
+				"audio_call": "enabled",
+				"screen_share_call": "enabled"
+			}
+		},
+		"mobile": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"group_video_call": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"forward_recordings": "enabled",
+				"start": "enabled",
+				"download_recordings": "enabled"
+			}
+		},
+		"mobileqr": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"notebook_integration": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"zoho_directoy": {
+			"is_admin_module": true,
+			"status": "enabled"
+		},
+		"messaging": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"networks": {
+			"is_admin_module": true,
+			"status": "enabled"
+		},
+		"cliq_user_import": {
+			"is_admin_module": true,
+			"status": "disabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"direct_call_recording": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"group_chat": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"attachments": "enabled",
+				"download": "enabled",
+				"forward": "enabled",
+				"create": "enabled"
+			}
+		},
+		"profiles": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"update_thread_status": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"department_member": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"attachments": "enabled",
+				"download": "enabled",
+				"video_call": "enabled",
+				"forward": "enabled",
+				"message": "enabled",
+				"audio_call": "enabled",
+				"screen_share_call": "enabled"
+			}
+		},
+		"license": {
+			"is_admin_module": true,
+			"status": "enabled"
+		},
+		"designations": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"organisation_member": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"configs": [
+				{
+					"name": "custom_rule",
+					"label": "Other colleagues - Set custom",
+					"type": "hash",
+					"value": {
+						"disabled": [],
+						"enabled": []
+					}
+				}
+			],
+			"actions": {
+				"attachments": "enabled",
+				"download": "enabled",
+				"video_call": "enabled",
+				"forward": "enabled",
+				"message": "enabled",
+				"audio_call": "enabled",
+				"screen_share_call": "enabled"
+			}
+		},
+		"primetime": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"private_channels": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"attachments": "enabled",
+				"use": "enabled",
+				"download": "enabled",
+				"forward": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"media": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"message_actions": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"sound_notification": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"teams": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"user_preference": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"mobile_share_restriction": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"storage_access": "enabled",
+				"voice_message": "enabled"
+			}
+		},
+		"channel_webhooks": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"export": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"activity_status": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"approvals": {
+			"is_admin_module": false,
+			"status": "disabled"
+		},
+		"whats_new": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"ip_restriction": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"users_fields": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"custom_admin": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"quick_status": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"smart_rooms": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"manage": "enabled"
+			}
+		},
+		"hipchat_migration": {
+			"is_admin_module": false,
+			"status": "disabled"
+		},
+		"presentation": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"start": "enabled"
+			}
+		},
+		"email_visibility": {
+			"is_admin_module": false,
+			"status": "disabled",
+			"actions": {
+				"allow": "enabled"
+			}
+		},
+		"desktop_notification": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"teams_migration": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"usage_reports": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled",
+				"export": "enabled"
+			}
+		},
+		"departments": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"starred_message": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"mobile_privacy": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"enforce_passcode": "disabled"
+			}
+		},
+		"client_user": {
+			"is_admin_module": false,
+			"status": "disabled"
+		},
+		"zia": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled"
+			}
+		},
+		"ios_app": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"internal_apps": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"manage": "enabled"
+			}
+		},
+		"external_channels": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"attachments": "enabled",
+				"use": "enabled",
+				"download": "enabled",
+				"forward": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"channels": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"probable_presence": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"platform_storage": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"tabs_prefernece": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"bots": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"applications": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"install": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"users": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"migrations": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"modules": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"edit": "enabled"
+			}
+		},
+		"themes": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"web_app": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"dlp": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"manage": "enabled"
+			}
+		},
+		"custom_emojis": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"delete": "enabled",
+				"publish_to_org": "enabled"
+			}
+		},
+		"default_status": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"taz_notification": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"webinars": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"google_migration": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"whiteboard_in_calls": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"start": "enabled"
+			}
+		},
+		"taskmanagement": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"meeting_branding": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"create": "enabled",
+				"manage": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"policies": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"edit": "enabled"
+			}
+		},
+		"cliq_access": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"screen_sharing": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"start": "enabled"
+			}
+		},
+		"checkins": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"allow": "enabled"
+			}
+		},
+		"tabs_mobile_preferences": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"projects_integration": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"edit": "enabled"
+			}
+		},
+		"disable_restrict_ip": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"notification": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"assets": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"schedulers": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"help_resources": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"mobile_device_restriction": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access_unmanaged_device": "enabled",
+				"block_users_in_jail_broken_device": "enabled"
+			}
+		},
+		"signature_chat": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled"
+			}
+		},
+		"channel_management": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"manage": "enabled"
+			}
+		},
+		"email_notification": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"desktop_app": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"custom_emails": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"get": "enabled",
+				"create": "enabled",
+				"edit": "enabled",
+				"delete": "enabled"
+			}
+		},
+		"android_app": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"call_recording": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"audio_call": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"forward_recordings": "enabled",
+				"start": "enabled",
+				"download_recordings": "enabled"
+			}
+		},
+		"audits": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"data_cleanup": {
+			"is_admin_module": true,
+			"status": "enabled",
+			"actions": {
+				"access": "enabled"
+			}
+		},
+		"send_feed_back": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"taz": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"remote_work": {
+			"is_admin_module": false,
+			"status": "enabled"
+		},
+		"guest_room": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"use": "enabled",
+				"create": "enabled"
+			}
+		},
+		"live_feed": {
+			"is_admin_module": false,
+			"status": "enabled",
+			"actions": {
+				"allow": "enabled"
+			}
+		}
+	}
+]

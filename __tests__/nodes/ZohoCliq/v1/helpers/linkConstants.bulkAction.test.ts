@@ -1,0 +1,32 @@
+import {
+	AI_AGENT_TOOL_DESCRIPTIONS_BASE_URL,
+	AI_AGENT_TOOL_DOC_LINKS,
+	BULK_ACTION_EXPORT_CHANNELS_AGENT_DETAILS_LINK,
+	BULK_ACTION_EXPORT_CONVERSATION_MEMBERS_AGENT_DETAILS_LINK,
+	BULK_ACTION_EXPORT_CONVERSATIONS_AGENT_DETAILS_LINK,
+	BULK_ACTION_EXPORT_MESSAGES_AGENT_DETAILS_LINK,
+} from '../../../../../nodes/ZohoCliq/v1/helpers/linkConstants';
+
+describe('ZohoCliq - linkConstants bulkAction links', () => {
+	it('should expose BulkAction AI guide links directly and through the grouped registry', () => {
+		expect(BULK_ACTION_EXPORT_CHANNELS_AGENT_DETAILS_LINK).toBe(
+			`${AI_AGENT_TOOL_DESCRIPTIONS_BASE_URL}/BulkAction/export-channels.md`,
+		);
+		expect(BULK_ACTION_EXPORT_CONVERSATION_MEMBERS_AGENT_DETAILS_LINK).toBe(
+			`${AI_AGENT_TOOL_DESCRIPTIONS_BASE_URL}/BulkAction/export-conversation-members.md`,
+		);
+		expect(BULK_ACTION_EXPORT_CONVERSATIONS_AGENT_DETAILS_LINK).toBe(
+			`${AI_AGENT_TOOL_DESCRIPTIONS_BASE_URL}/BulkAction/export-conversations.md`,
+		);
+		expect(BULK_ACTION_EXPORT_MESSAGES_AGENT_DETAILS_LINK).toBe(
+			`${AI_AGENT_TOOL_DESCRIPTIONS_BASE_URL}/BulkAction/export-messages.md`,
+		);
+
+		expect(AI_AGENT_TOOL_DOC_LINKS.bulkAction).toEqual({
+			exportChannels: BULK_ACTION_EXPORT_CHANNELS_AGENT_DETAILS_LINK,
+			exportConversationMembers: BULK_ACTION_EXPORT_CONVERSATION_MEMBERS_AGENT_DETAILS_LINK,
+			exportConversations: BULK_ACTION_EXPORT_CONVERSATIONS_AGENT_DETAILS_LINK,
+			exportMessages: BULK_ACTION_EXPORT_MESSAGES_AGENT_DETAILS_LINK,
+		});
+	});
+});

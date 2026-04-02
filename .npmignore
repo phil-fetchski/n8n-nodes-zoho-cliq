@@ -1,0 +1,66 @@
+# NPM Ignore - Controls what gets published to npm/GitHub Packages
+# CRITICAL: This prevents accidental publishing of development files
+
+# Source files (only publish dist/)
+*.ts
+!*.d.ts
+tsconfig.json
+eslint.config.cjs
+.prettierrc.json
+.prettierignore
+
+# Development and CI
+.github/
+.git/
+.gitignore
+.npmignore
+.vscode/
+.idea/
+.opencode/
+
+# Documentation and internal docs
+Docs/
+docs/
+Private/
+*.md
+!README.md
+!LICENSE
+
+
+# Testing
+test/
+tests/
+__tests__/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+coverage/
+
+# Build artifacts to exclude
+node_modules/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Images and assets (except required icon)
+*.png
+*.jpg
+*.jpeg
+*.gif
+!Zoho_Cliq_N8N.png
+
+# Lock files
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
