@@ -1,5 +1,5 @@
 export const NODE_DESCRIPTION =
-	'Fully manage your Zoho Cliq workspace — messages, channels, teams, users, databases, events, reminders, bots, files, and more';
+	'Fully manage your Zoho Cliq workspace: messages, channels, teams, users, databases, events, reminders, bots, files, and more';
 
 /**
  * n8n subtitle expression template rendered in the workflow editor.
