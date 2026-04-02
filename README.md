@@ -41,7 +41,7 @@ Install this package as a standard n8n community node.
 ### Package Name
 
 ```text
-n8n-nodes-zoho-cliq
+@phil-fetchski/n8n-nodes-zoho-cliq
 ```
 
 ## Credentials
