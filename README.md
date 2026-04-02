@@ -38,7 +38,7 @@ Install this package as a standard n8n community node.
 4. Enter the package name below.
 5. Approve the installation prompt and restart n8n if required.
 
-### Package Name
+### Package Name - Must Include the scope!
 
 ```text
 @phil-fetchski/n8n-nodes-zoho-cliq
