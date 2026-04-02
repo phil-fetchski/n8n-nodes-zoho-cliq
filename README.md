@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Assets/Repo_Banner_n8n-nodes-zoho-cliq.png" alt="Banner for README - n8n-nodes-zoho-cliq repo" width="100%">
+  <img src="https://raw.githubusercontent.com/phil-fetchski/n8n-nodes-zoho-cliq/main/Assets/Repo_Banner_n8n-nodes-zoho-cliq.png" alt="Banner for README - n8n-nodes-zoho-cliq repo" width="100%">
 </p>
 
 # n8n-nodes-zoho-cliq
@@ -50,7 +50,7 @@ This node uses OAuth2 via the **Zoho Cliq OAuth2 API** credential type.
 
 Start with the setup guide included in this repository for the exact credential configuration flow used by this node, then use the official Zoho references for underlying OAuth protocol details.
 
-- [Credentials Setup Guide](documentation/CREDENTIALS.md)
+- [Credentials Setup Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/CREDENTIALS.md)
 - [Zoho OAuth Protocol](https://www.zoho.com/accounts/protocol/oauth.html)
 - [Zoho Cliq REST Authentication](https://www.zoho.com/cliq/help/restapi/v2/#authentication)
 
@@ -64,39 +64,39 @@ Over 160 operations are organized across 25 resources.
 
 | Resource | Description | Documentation |
 | --- | --- | --- |
-| Message | Post, edit, delete, retrieve, get, and schedule messages across channels, chats, bots, and users | [Operations](documentation/Message.md) |
-| Thread | Create, reply to, and manage threaded conversations within channels | [Operations](documentation/Thread.md) |
-| Reaction | Add, remove, and retrieve emoji reactions on messages | [Operations](documentation/Reaction.md) |
-| File | Upload, retrieve, and share files into conversations | [Operations](documentation/Files.md) |
-| Channel | Create, update, delete, and manage channel memberships, permissions, and settings | [Operations](documentation/Channel.md) |
-| Chat | List, mute, unmute, pin, unpin, and leave direct message and group chat conversations | [Operations](documentation/Chat.md) |
-| Bot | Retrieve bot subscribers and trigger bot-initiated calls | [Operations](documentation/Bot.md) |
+| Message | Post, edit, delete, retrieve, get, and schedule messages across channels, chats, bots, and users | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Message.md) |
+| Thread | Create, reply to, and manage threaded conversations within channels | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Thread.md) |
+| Reaction | Add, remove, and retrieve emoji reactions on messages | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Reaction.md) |
+| File | Upload, retrieve, and share files into conversations | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Files.md) |
+| Channel | Create, update, delete, and manage channel memberships, permissions, and settings | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Channel.md) |
+| Chat | List, mute, unmute, pin, unpin, and leave direct message and group chat conversations | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Chat.md) |
+| Bot | Retrieve bot subscribers and trigger bot-initiated calls | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Bot.md) |
 
 ### Organization and Administration
 
 | Resource | Description | Documentation |
 | --- | --- | --- |
-| User | Look up, list, and manage user profiles and organization members | [Operations](documentation/User.md) |
-| Team | Create, update, delete, and manage team memberships | [Operations](documentation/Team.md) |
-| Department | Create, update, delete, and manage department memberships | [Operations](documentation/Department.md) |
-| Role | Create, update, delete roles and manage role permissions and user assignments | [Operations](documentation/Role.md) |
-| Designation | Create, list, delete designations and manage designation members | [Operations](documentation/Designation.md) |
-| User Field | Retrieve and manage custom user profile fields | [Operations](documentation/UserField.md) |
-| User Status | Get, set, and clear user presence and status information | [Operations](documentation/UserStatus.md) |
-| Custom Domain | Add, verify, get, and delete custom domains for the organization | [Operations](documentation/CustomDomain.md) |
-| Custom Email | Verify and update organization email configuration | [Operations](documentation/CustomEmail.md) |
-| Database | Create, list, and delete Cliq Database storage entries | [Operations](documentation/Database.md) |
-| Widget Map Ticker | Add, update, and delete widget map ticker entries | [Operations](documentation/WidgetMapTicker.md) |
-| Bulk Action | Export channel and conversation data for compliance and backup | [Operations](documentation/BulkAction.md) |
+| User | Look up, list, and manage user profiles and organization members | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/User.md) |
+| Team | Create, update, delete, and manage team memberships | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Team.md) |
+| Department | Create, update, delete, and manage department memberships | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Department.md) |
+| Role | Create, update, delete roles and manage role permissions and user assignments | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Role.md) |
+| Designation | Create, list, delete designations and manage designation members | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Designation.md) |
+| User Field | Retrieve and manage custom user profile fields | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/UserField.md) |
+| User Status | Get, set, and clear user presence and status information | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/UserStatus.md) |
+| Custom Domain | Add, verify, get, and delete custom domains for the organization | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/CustomDomain.md) |
+| Custom Email | Verify and update organization email configuration | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/CustomEmail.md) |
+| Database | Create, list, and delete Cliq Database storage entries | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Database.md) |
+| Widget Map Ticker | Add, update, and delete widget map ticker entries | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/WidgetMapTicker.md) |
+| Bulk Action | Export channel and conversation data for compliance and backup | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/BulkAction.md) |
 
 ### Workflow and Scheduling
 
 | Resource | Description | Documentation |
 | --- | --- | --- |
-| Event | List events, get calendars, and upload calendar attachments | [Operations](documentation/Events.md) |
-| Reminder | Create and manage reminders | [Operations](documentation/Reminders.md) |
-| Remote Work | Manage remote work status entries (clock in, clock out, check status) | [Operations](documentation/RemoteWork.md) |
-| Calls and Meetings | List call recordings and retrieve recording details | [Operations](documentation/CallsMeeting.md) |
+| Event | List events, get calendars, and upload calendar attachments | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Events.md) |
+| Reminder | Create and manage reminders | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/Reminders.md) |
+| Remote Work | Manage remote work status entries (clock in, clock out, check status) | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/RemoteWork.md) |
+| Calls and Meetings | List call recordings and retrieve recording details | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/CallsMeeting.md) |
 
 ### Helper Resources
 
@@ -104,8 +104,8 @@ These resources are custom additions that do not map to Zoho Cliq API endpoints.
 
 | Resource | Description | Documentation |
 | --- | --- | --- |
-| Message Component Builder | Build and validate rich Cliq message payloads, card payloads, buttons, slides, tables, charts, graphs, and ACK messages without making API calls | [Operations](documentation/MessageComponentBuilder.md) |
-| OAuth Helper | Inspect granted scopes, discover scope packs, and validate scope coverage against the connected credential | [Operations](documentation/OAuthHelper.md) |
+| Message Component Builder | Build and validate rich Cliq message payloads, card payloads, buttons, slides, tables, charts, graphs, and ACK messages without making API calls | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/MessageComponentBuilder.md) |
+| OAuth Helper | Inspect granted scopes, discover scope packs, and validate scope coverage against the connected credential | [Operations](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/documentation/OAuthHelper.md) |
 
 ## Custom Enhancements
 
@@ -178,33 +178,33 @@ These guides were developed and tested iteratively against a Claude-powered AI a
 
 | Resource | AI Tool Field Guide |
 | --- | --- |
-| Bot | [Guide](AiAgentToolDescriptions/Resources/Bot/README.md) |
-| Bulk Action | [Guide](AiAgentToolDescriptions/Resources/BulkAction/README.md) |
-| Calls and Meetings | [Guide](AiAgentToolDescriptions/Resources/CallsMeeting/README.md) |
-| Channel | [Guide](AiAgentToolDescriptions/Resources/Channel/README.md) |
-| Chat | [Guide](AiAgentToolDescriptions/Resources/Chat/README.md) |
-| Custom Domain | [Guide](AiAgentToolDescriptions/Resources/CustomDomain/README.md) |
-| Custom Email | [Guide](AiAgentToolDescriptions/Resources/CustomEmail/README.md) |
-| Database | [Guide](AiAgentToolDescriptions/Resources/Database/README.md) |
-| Department | [Guide](AiAgentToolDescriptions/Resources/Department/README.md) |
-| Designation | [Guide](AiAgentToolDescriptions/Resources/Designation/README.md) |
-| Events | [Guide](AiAgentToolDescriptions/Resources/Events/README.md) |
-| Files | [Guide](AiAgentToolDescriptions/Resources/Files/README.md) |
-| Message | [Guide](AiAgentToolDescriptions/Resources/Message/README.md) |
-| Message Component Builder | [Guide](AiAgentToolDescriptions/Resources/MessageComponentBuilder/README.md) |
-| OAuth Helper | [Guide](AiAgentToolDescriptions/Resources/OAuthHelper/README.md) |
-| Reaction | [Guide](AiAgentToolDescriptions/Resources/Reaction/README.md) |
-| Reminders | [Guide](AiAgentToolDescriptions/Resources/Reminders/README.md) |
-| Remote Work | [Guide](AiAgentToolDescriptions/Resources/RemoteWork/README.md) |
-| Role | [Guide](AiAgentToolDescriptions/Resources/Role/README.md) |
-| Team | [Guide](AiAgentToolDescriptions/Resources/Team/README.md) |
-| Thread | [Guide](AiAgentToolDescriptions/Resources/Thread/README.md) |
-| User | [Guide](AiAgentToolDescriptions/Resources/User/README.md) |
-| User Field | [Guide](AiAgentToolDescriptions/Resources/UserField/README.md) |
-| User Status | [Guide](AiAgentToolDescriptions/Resources/UserStatus/README.md) |
-| Widget Map Ticker | [Guide](AiAgentToolDescriptions/Resources/WidgetMapTicker/README.md) |
+| Bot | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Bot/README.md) |
+| Bulk Action | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/BulkAction/README.md) |
+| Calls and Meetings | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/CallsMeeting/README.md) |
+| Channel | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Channel/README.md) |
+| Chat | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Chat/README.md) |
+| Custom Domain | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/CustomDomain/README.md) |
+| Custom Email | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/CustomEmail/README.md) |
+| Database | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Database/README.md) |
+| Department | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Department/README.md) |
+| Designation | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Designation/README.md) |
+| Events | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Events/README.md) |
+| Files | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Files/README.md) |
+| Message | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Message/README.md) |
+| Message Component Builder | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/MessageComponentBuilder/README.md) |
+| OAuth Helper | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/OAuthHelper/README.md) |
+| Reaction | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Reaction/README.md) |
+| Reminders | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Reminders/README.md) |
+| Remote Work | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/RemoteWork/README.md) |
+| Role | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Role/README.md) |
+| Team | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Team/README.md) |
+| Thread | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/Thread/README.md) |
+| User | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/User/README.md) |
+| User Field | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/UserField/README.md) |
+| User Status | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/UserStatus/README.md) |
+| Widget Map Ticker | [Guide](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/Resources/WidgetMapTicker/README.md) |
 
-The master index for all AI tool guides is available at [AiAgentToolDescriptions/README.md](AiAgentToolDescriptions/README.md).
+The master index for all AI tool guides is available at [AiAgentToolDescriptions/README.md](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AiAgentToolDescriptions/README.md).
 
 ## Development
 
@@ -223,7 +223,7 @@ Run a single test:
 npx jest __tests__/path/to/file.test.ts
 ```
 
-See [CLAUDE.md](CLAUDE.md) and [AGENTS.md](AGENTS.md) for architecture details and guidance for AI-assisted development.
+See [CLAUDE.md](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/CLAUDE.md) and [AGENTS.md](https://github.com/phil-fetchski/n8n-nodes-zoho-cliq/blob/main/AGENTS.md) for architecture details and guidance for AI-assisted development.
 
 ## References
 
@@ -254,5 +254,5 @@ MIT
 
 ---
 <p align="center">
-  <img src="./Assets/Repo_Footer_n8n-nodes-zoho-cliq.png" alt="Footer for README - n8n-nodes-zoho-cliq repo" width="100%">
+  <img src="https://raw.githubusercontent.com/phil-fetchski/n8n-nodes-zoho-cliq/main/Assets/Repo_Footer_n8n-nodes-zoho-cliq.png" alt="Footer for README - n8n-nodes-zoho-cliq repo" width="100%">
 </p>
