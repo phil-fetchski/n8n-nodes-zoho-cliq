@@ -94,7 +94,6 @@ const postMessagePayloadDescription: INodeProperties[] = messagePayloadDescripti
 				required: false,
 				description:
 					'Used when Message Type resolves to Text (Cliq Markdown). Provide a non-empty string up to 5000 characters. Leave blank when Message Type resolves to Advanced (JSON).',
-				displayOptions: undefined,
 			};
 		}
 
@@ -103,7 +102,6 @@ const postMessagePayloadDescription: INodeProperties[] = messagePayloadDescripti
 				...property,
 				description:
 					'Used when Message Type resolves to Advanced (JSON). Provide a raw JSON object with a non-empty top-level `text` string. Leave blank when Message Type resolves to Text (Cliq Markdown).',
-				displayOptions: undefined,
 			};
 		}
 

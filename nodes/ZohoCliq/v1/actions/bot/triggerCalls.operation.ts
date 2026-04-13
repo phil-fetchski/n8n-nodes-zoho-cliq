@@ -203,6 +203,7 @@ const properties: INodeProperties[] = [
 		placeholder: 'Add Action',
 		typeOptions: {
 			multipleValues: true,
+			sortable: true,
 		},
 		default: {},
 		displayOptions: {

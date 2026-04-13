@@ -15,13 +15,12 @@ Set these manually before choosing one of the setup paths below:
 - Keep **Include Enhanced Output** enabled so the tool returns workflow-friendly success metadata.
 - Do not delegate **Include Enhanced Output** or **AI Error Mode** to the agent.
 - Choose exactly one setup path from this guide. Do not mix the two paths in the same tool.
-- This guide supports two AI-controlled payload paths only: `text` for normal plain-text messages, or `json` for raw JSON message objects used mainly for card payloads.
-- Do not use `rich` / `Rich/Card` for AI Tool setup in this operation.
-- Decide upfront whether **Message Type** will be fixed by the user or chosen by the agent.
+- This guide supports two message type setups: `Text (Cliq Markdown)` for normal plain-text messages, or `Advanced (JSON)` for raw JSON message objects used mainly for card payloads.
+- Do not use `Rich/Card` for AI Tool setup in this operation.
+- Set **Message Type** manually to either `Text (Cliq Markdown)` or `Advanced (JSON)`. Do not delegate this choice to the agent — the n8n UI shows only the matching content field based on your selection.
 - Keep **Include Enhanced Output** enabled when channel-target posts should also return `posted_to_channel.channel_id`, `posted_to_channel.chat_id`, `posted_to_channel.unique_name`, and `posted_to_channel.level` for follow-up Message tools.
-- If the user fixes **Message Type** to `text`, make **Text** the only agent-controlled content input and leave **JSON** blank.
-- If the user fixes **Message Type** to `json`, make **JSON** the only agent-controlled content input and leave **Text** blank.
-- If **Message Type** is AI-controlled with `$fromAI()`, configure both **Text** and **JSON** with the optional expression variants from this guide so the agent can populate only the field that matches the selected message type.
+- If **Message Type** is set to `Text (Cliq Markdown)`, configure only the **Text** field for the agent.
+- If **Message Type** is set to `Advanced (JSON)`, configure only the **JSON** field for the agent.
 - Do not delegate **Target** to the agent.
 
 ## Important Disclaimer

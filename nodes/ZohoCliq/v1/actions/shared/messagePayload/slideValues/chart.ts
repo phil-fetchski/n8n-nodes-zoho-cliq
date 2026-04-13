@@ -46,7 +46,7 @@ export function createChartSlideProperties(
 			name: 'chartDataPoints',
 			type: 'fixedCollection',
 			placeholder: 'Add Chart Segment',
-			typeOptions: { multipleValues: true, maxValues: 5 },
+			typeOptions: { multipleValues: true, maxValues: 5, sortable: true },
 			default: {},
 			description:
 				'Up to 5 segments. Values must be numbers and must total 100 for reliable chart rendering.',
@@ -80,7 +80,7 @@ export function createChartSlideProperties(
 			name: 'chartButtons',
 			type: 'fixedCollection',
 			placeholder: 'Add Chart Button',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description: 'Currently no buttons added for this component',
 			displayOptions: { show: { slideInputMode: ['structured'], type: ['percentage_chart'] } },

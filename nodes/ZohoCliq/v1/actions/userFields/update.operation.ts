@@ -162,6 +162,7 @@ const properties: INodeProperties[] = [
 		default: {},
 		typeOptions: {
 			multipleValues: true,
+			sortable: true,
 		},
 		options: [
 			{

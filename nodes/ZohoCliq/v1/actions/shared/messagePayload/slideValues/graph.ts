@@ -64,7 +64,7 @@ export function createGraphSlideProperties(
 			name: 'graphCategories',
 			type: 'fixedCollection',
 			placeholder: 'Add Category',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description:
 				'Up to 5 categories. Each category supports up to 20 value points (label + numeric value).',
@@ -87,7 +87,7 @@ export function createGraphSlideProperties(
 							name: 'values',
 							type: 'fixedCollection',
 							placeholder: 'Add Value Point',
-							typeOptions: { multipleValues: true },
+							typeOptions: { multipleValues: true, sortable: true },
 							default: {},
 							options: [
 								{
@@ -122,7 +122,7 @@ export function createGraphSlideProperties(
 			name: 'graphButtons',
 			type: 'fixedCollection',
 			placeholder: 'Add Graph Button',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description: 'Currently no buttons added for this component',
 			displayOptions: { show: { slideInputMode: ['structured'], type: ['graph'] } },

@@ -201,6 +201,7 @@ const properties: INodeProperties[] = [
 		type: 'fixedCollection',
 		typeOptions: {
 			multipleValues: true,
+			sortable: true,
 			multipleValueButtonText: 'Add Reminder',
 			fixedCollection: {
 				itemTitle: 'Reminder',

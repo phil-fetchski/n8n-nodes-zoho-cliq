@@ -33,7 +33,7 @@ export function createLabelSlideProperties(
 			name: 'labelDataPairs',
 			type: 'fixedCollection',
 			placeholder: 'Add Label Field',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			displayOptions: {
 				show: {
@@ -68,7 +68,7 @@ export function createLabelSlideProperties(
 			name: 'labelButtons',
 			type: 'fixedCollection',
 			placeholder: 'Add Label Button',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description: 'Currently no buttons added for this component',
 			displayOptions: { show: { slideInputMode: ['structured'], type: ['label'] } },

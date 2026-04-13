@@ -486,6 +486,7 @@ export const properties: INodeProperties[] = [
 		placeholder: 'Add Another File',
 		typeOptions: {
 			multipleValues: true,
+			sortable: true,
 			multipleValueButtonText: 'Add Another File',
 			maxValue: 10,
 		},
@@ -570,6 +571,7 @@ export const properties: INodeProperties[] = [
 		placeholder: 'Add Subscriber',
 		typeOptions: {
 			multipleValues: true,
+			sortable: true,
 			multipleValueButtonText: 'Add Subscriber',
 		},
 		default: {

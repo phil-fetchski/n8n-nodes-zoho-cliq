@@ -91,6 +91,7 @@ const properties: INodeProperties[] = [
 		placeholder: 'Add Ticker Object',
 		typeOptions: {
 			multipleValues: true,
+			sortable: true,
 		},
 		default: {
 			ticker: [],
