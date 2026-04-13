@@ -31,10 +31,9 @@ Provide exactly one fixed target identifier:
 - fixed `Thread` target uses `Chat ID` plus `Thread ID`
 - fixed `User` target uses `Email ID / ZUID` and sends a direct message from the authenticated Zoho Cliq user to that recipient
 
-Provide `Message Type` as either `text` or `json`:
-- `text` uses the `Text` field for a normal plain-text message
-- `json` uses the `JSON` field and must include a non-empty top-level `text` string
-- use `json` mainly for card payloads such as `text` + `card` / `slides` / `buttons`
+The message content field is configured by the user during setup:
+- if the `Text` field is available, provide a non-empty plain-text string up to 5000 characters
+- if the `JSON` field is available, provide a raw JSON message object with a non-empty top-level `text` string — used mainly for card payloads such as `text` + `card` / `slides` / `buttons`
 - if a structured Zoho Cliq card payload is needed and the tool is available, first call `Build_an_agent-ready_card_payload_in_Zoho_Cliq` and then pass its returned object into this tool's `json_payload_fixed_target` field
 
 If the fixed target is `Bot`, provide `Bot Unique Name` for the bot conversation. If the fixed target is `Channel` or `Chat` and `Post as Bot` is true, use that same `Bot Unique Name` field for the sender bot identity. Do not use `Post as Bot` for fixed `Bot`, `Thread`, or `User` targets.
@@ -228,19 +227,6 @@ Provide one valid Zoho Cliq user email address or ZUID for this fixed User targe
 
 ---
 
-### Message Type (Optional)
-
-- Plain text description:
-```txt
-Optional message mode. ENUM: ["text", "json"]. Default `text`. Use `text` for normal plain-text messages. Use `json` only when filling the `JSON` field with a raw JSON message object that includes a non-empty top-level `text` string. Use `json` mainly for card payloads.
-```
-- Suggested `$fromAI()`:
-```txt
-{{ $fromAI('message_type_fixed_target', 'Optional message mode. ENUM: [\"text\", \"json\"]. Default `text`. Use `text` for normal plain-text messages. Use `json` only when filling the `JSON` field with a raw JSON message object that includes a non-empty top-level `text` string. Use `json` mainly for card payloads.', 'string', 'text') }}
-```
-
----
-
 ### Post as Bot (Optional)
 
 - Plain text description:
@@ -254,36 +240,32 @@ Optional boolean. Set true only when the fixed target is Channel or Chat and the
 
 ---
 
-### Text (Required)
+### Text (Required — Text setup only)
+
+Only configure this field when **Message Type** is set to `Text (Cliq Markdown)`. Skip this section entirely for `Advanced (JSON)` setup.
 
 - Plain text description:
 ```txt
-Required when Message Type is `text`. Provide a non-empty string up to 5000 characters. Limited Cliq markdown guidance for AI use: `*bold*`, `_italics_`, `~strike~`, `` `inline code` ``, triple-backtick code blocks, and `[label](https://example.com)` links. Leave blank when Message Type is `json`.
+Provide a non-empty string up to 5000 characters. Limited Cliq markdown guidance for AI use: `*bold*`, `_italics_`, `~strike~`, `` `inline code` ``, triple-backtick code blocks, and `[label](https://example.com)` links.
 ```
-- Suggested `$fromAI()` when the user manually fixes Message Type to `text`:
+- Suggested `$fromAI()`:
 ```txt
-{{ $fromAI('text_fixed_target', 'Required when Message Type is `text`. Provide a non-empty string up to 5000 characters. Limited Cliq markdown guidance for AI use: `*bold*`, `_italics_`, `~strike~`, `` `inline code` ``, triple-backtick code blocks, and `[label](https://example.com)` links. Leave blank when Message Type is `json`.', 'string') }}
-```
-- Suggested `$fromAI()` when Message Type is AI-controlled:
-```txt
-{{ $fromAI('text_fixed_target', 'Required when Message Type is `text`. Populate this field only when Message Type resolves to `text`. Provide a non-empty string up to 5000 characters. Limited Cliq markdown guidance for AI use: `*bold*`, `_italics_`, `~strike~`, `` `inline code` ``, triple-backtick code blocks, and `[label](https://example.com)` links. Leave blank when Message Type resolves to `json`.', 'string', '') }}
+{{ $fromAI('text_fixed_target', 'Provide a non-empty string up to 5000 characters. Limited Cliq markdown guidance for AI use: `*bold*`, `_italics_`, `~strike~`, `` `inline code` ``, triple-backtick code blocks, and `[label](https://example.com)` links.', 'string') }}
 ```
 
 ---
 
-### JSON (Optional)
+### JSON (Required — JSON setup only)
+
+Only configure this field when **Message Type** is set to `Advanced (JSON)`. Skip this section entirely for `Text (Cliq Markdown)` setup.
 
 - Plain text description:
 ```txt
-Required when Message Type is `json`. Provide a raw JSON message object as a literal JSON object or a stringified JSON object. The payload must include a non-empty top-level `text` string. Use this mode mainly for card payloads such as `{ "text": "...", "card": {...}, "slides": [...], "buttons": [...] }`. If a structured card payload is needed and the tool is available, prefer building it first with `Build_an_agent-ready_card_payload_in_Zoho_Cliq` and pass that returned object into this tool's `json_payload_fixed_target` field. Leave blank when Message Type is `text`.
+Provide a raw JSON message object as a literal JSON object or a stringified JSON object. The payload must include a non-empty top-level `text` string. Use this mode mainly for card payloads such as `{ "text": "...", "card": {...}, "slides": [...], "buttons": [...] }`. If a structured card payload is needed and the tool is available, prefer building it first with `Build_an_agent-ready_card_payload_in_Zoho_Cliq` and pass that returned object into this tool's `json_payload_fixed_target` field.
 ```
-- Suggested `$fromAI()` when the user manually fixes Message Type to `json`:
+- Suggested `$fromAI()`:
 ```txt
-{{ $fromAI('json_payload_fixed_target', 'Required when Message Type is `json`. Provide a raw JSON message object as a literal JSON object or a stringified JSON object. The payload must include a non-empty top-level `text` string. Use this mode mainly for card payloads such as `{ \"text\": \"...\", \"card\": {...}, \"slides\": [...], \"buttons\": [...] }`. If a structured card payload is needed and the tool is available, prefer building it first with `Build_an_agent-ready_card_payload_in_Zoho_Cliq` and pass that returned object into this tool\'s `json_payload_fixed_target` field. Leave blank when Message Type is `text`.', 'string') }}
-```
-- Suggested `$fromAI()` when Message Type is AI-controlled:
-```txt
-{{ $fromAI('json_payload_fixed_target', 'Required when Message Type is `json`. Populate this field only when Message Type resolves to `json`. Provide a raw JSON message object as a literal JSON object or a stringified JSON object. The payload must include a non-empty top-level `text` string. Use this mode mainly for card payloads such as `{ \"text\": \"...\", \"card\": {...}, \"slides\": [...], \"buttons\": [...] }`. If a structured card payload is needed and the tool is available, prefer building it first with `Build_an_agent-ready_card_payload_in_Zoho_Cliq` and pass that returned object into this tool\'s `json_payload_fixed_target` field. Leave blank when Message Type resolves to `text`.', 'string', {}) }}
+{{ $fromAI('json_payload_fixed_target', 'Provide a raw JSON message object as a literal JSON object or a stringified JSON object. The payload must include a non-empty top-level `text` string. Use this mode mainly for card payloads such as `{ \"text\": \"...\", \"card\": {...}, \"slides\": [...], \"buttons\": [...] }`. If a structured card payload is needed and the tool is available, prefer building it first with `Build_an_agent-ready_card_payload_in_Zoho_Cliq` and pass that returned object into this tool\'s `json_payload_fixed_target` field.', 'string') }}
 ```
 
 ---
