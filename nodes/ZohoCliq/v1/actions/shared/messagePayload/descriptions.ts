@@ -553,7 +553,7 @@ export const messagePayloadDescription: INodeProperties[] = [
 		name: 'mentions',
 		type: 'fixedCollection',
 		placeholder: 'Add Mention',
-		typeOptions: { multipleValues: true },
+		typeOptions: { multipleValues: true, sortable: true },
 		default: {},
 		displayOptions: {
 			show: {
@@ -848,7 +848,7 @@ export const messagePayloadDescription: INodeProperties[] = [
 		name: 'slides',
 		type: 'fixedCollection',
 		placeholder: 'Add Component',
-		typeOptions: { multipleValues: true },
+		typeOptions: { multipleValues: true, sortable: true },
 		default: {},
 		displayOptions: { show: { messageType: ['rich'], cardInputMode: ['structured'] } },
 		options: [
@@ -864,7 +864,7 @@ export const messagePayloadDescription: INodeProperties[] = [
 		name: 'buttons',
 		type: 'fixedCollection',
 		placeholder: 'Add Card Button',
-		typeOptions: { multipleValues: true },
+		typeOptions: { multipleValues: true, sortable: true },
 		default: {},
 		displayOptions: { show: { messageType: ['rich'], cardInputMode: ['structured'] } },
 		description: 'Buttons shown at the bottom of the card',

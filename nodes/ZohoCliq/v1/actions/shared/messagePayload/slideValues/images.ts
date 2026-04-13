@@ -33,7 +33,7 @@ export function createImagesSlideProperties(
 			name: 'imageUrls',
 			type: 'fixedCollection',
 			placeholder: 'Add Image URL',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description:
 				'Use publicly reachable secure image URLs only (HTTPS). Private or HTTP URLs may not render.',
@@ -63,7 +63,7 @@ export function createImagesSlideProperties(
 			name: 'imagesButtons',
 			type: 'fixedCollection',
 			placeholder: 'Add Images Button',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description: 'Optional buttons to display below the images slide',
 			displayOptions: { show: { slideInputMode: ['structured'], type: ['images'] } },

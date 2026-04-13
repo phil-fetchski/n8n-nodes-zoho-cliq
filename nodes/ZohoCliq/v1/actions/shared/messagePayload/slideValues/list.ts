@@ -33,7 +33,7 @@ export function createListSlideProperties(
 			name: 'listItems',
 			type: 'fixedCollection',
 			placeholder: 'Add List Item',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			displayOptions: {
 				show: {
@@ -62,7 +62,7 @@ export function createListSlideProperties(
 			name: 'listButtons',
 			type: 'fixedCollection',
 			placeholder: 'Add List Button',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description: 'Currently no buttons added for this component',
 			displayOptions: { show: { slideInputMode: ['structured'], type: ['list'] } },

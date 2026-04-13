@@ -89,6 +89,7 @@ const properties: INodeProperties[] = [
 		type: 'fixedCollection',
 		typeOptions: {
 			multipleValues: true,
+			sortable: true,
 		},
 		default: {
 			id: [],

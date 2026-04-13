@@ -70,7 +70,7 @@ describe('Post Message Description Ordering', () => {
 		expect(attachToggle?.noDataExpression).toBe(true);
 	});
 
-	it('keeps Text and JSON available when Message Type is expression-driven', async () => {
+	it('shows Text only for messageType text and JSON only for messageType json', async () => {
 		await jest.isolateModulesAsync(async () => {
 			jest.dontMock('../../../../../../nodes/ZohoCliq/v1/actions/shared/messagePayload');
 
@@ -86,8 +86,8 @@ describe('Post Message Description Ordering', () => {
 			expect(textField).toBeDefined();
 			expect(jsonField).toBeDefined();
 			expect(textField?.required).toBe(false);
-			expect(textField?.displayOptions?.show?.messageType).toBeUndefined();
-			expect(jsonField?.displayOptions?.show?.messageType).toBeUndefined();
+			expect(textField?.displayOptions?.show?.messageType).toEqual(['text']);
+			expect(jsonField?.displayOptions?.show?.messageType).toEqual(['json']);
 		});
 	});
 

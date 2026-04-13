@@ -33,7 +33,7 @@ export function createTableSlideProperties(
 			name: 'tableHeaders',
 			type: 'fixedCollection',
 			placeholder: 'Add Column',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			displayOptions: {
 				show: {
@@ -62,7 +62,7 @@ export function createTableSlideProperties(
 			name: 'tableRows',
 			type: 'fixedCollection',
 			placeholder: 'Add Row',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			displayOptions: {
 				show: {
@@ -80,7 +80,7 @@ export function createTableSlideProperties(
 							name: 'values',
 							type: 'fixedCollection',
 							placeholder: 'Add Cell',
-							typeOptions: { multipleValues: true },
+							typeOptions: { multipleValues: true, sortable: true },
 							default: {},
 							options: [
 								{
@@ -113,7 +113,7 @@ export function createTableSlideProperties(
 			name: 'tableButtons',
 			type: 'fixedCollection',
 			placeholder: 'Add Table Button',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description: 'Configure buttons to display for this table component',
 			displayOptions: { show: { slideInputMode: ['structured'], type: ['table'] } },

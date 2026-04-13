@@ -56,7 +56,7 @@ export function createTextSlideProperties(
 			name: 'textButtons',
 			type: 'fixedCollection',
 			placeholder: 'Add Text Button',
-			typeOptions: { multipleValues: true },
+			typeOptions: { multipleValues: true, sortable: true },
 			default: {},
 			description: 'Buttons to include with this component',
 			displayOptions: { show: { slideInputMode: ['structured'], type: ['text'] } },
